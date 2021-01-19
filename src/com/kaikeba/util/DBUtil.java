@@ -16,7 +16,9 @@ public class DBUtil {
         }
         //2.    获取数据库链接
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql:///kkbdb?serverTimezone=Hongkong","root","jimmycai");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://kkbdb1.rwlb.rds.aliyuncs.com:3306/kkbdb","test_user","Password1213");
+//            pc-uf6727wyoa963sk18.mysql.polardb.rds.aliyuncs.com
+//            pc-uf6727wyoa963sk18.rwlb.rds.aliyuncs.com
             //3.    将链接返回给工具的使用者
             return conn;
         } catch (SQLException throwables) {
